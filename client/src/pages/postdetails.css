@@ -1,0 +1,355 @@
+/*.post-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.post-meta {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.post-image {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 1rem 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-image:hover {
+  transform: scale(1.02);
+}
+
+.post-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.like-btn {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+.edit-btn {
+  background-color: #fff3e0;
+  color: #ef6c00;
+}
+
+.delete-btn {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.icon-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+.icon-btn.close-btn {
+  background-color: #aaa;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.icon-btn.close-btn:hover {
+  background-color: #888;
+}
+*/
+
+.post-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.post-main {
+  padding-top: 1.5rem;
+}
+
+.post-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-author {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.post-content {
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.post-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.icon-btn {
+  border: none;
+  background: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background 0.3s;
+}
+
+.icon-btn:hover {
+  background: #ddd;
+}
+
+.liked {
+  background-color: #d0e9ff;
+}
+
+.related-section {
+  margin-top: 2rem;
+}
+
+.related-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.related-posts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.related-card {
+  text-decoration: none;
+  color: inherit;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.related-card:hover {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.related-image {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.related-info h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.related-author {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+
+.details-wrapper {
+  display: flex;
+  max-width: 1280px;
+  margin: 2rem auto;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.post-section {
+  flex: 2;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.sidebar {
+  flex: 1;
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  height: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.sidebar h3 {
+  margin-bottom: 1rem;
+}
+
+.related-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.related-card {
+  display: flex;
+  gap: 1rem;
+  background: #fff;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s;
+}
+
+.related-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.related-card img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.related-card h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.related-author {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.icon-btn {
+  border: none;
+  background: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background 0.3s;
+  margin-right: 0.5rem;
+}
+
+.icon-btn:hover {
+  background: #ddd;
+}
+
+.liked {
+  background-color: #d0e9ff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+}
+
+.post-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-author {
+  color: #888;
+  margin-bottom: 1.2rem;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1.5rem 0;
+}
+
+.post-body {
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.post-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
